@@ -1,0 +1,51 @@
+Lo Zen di Python è una sorta di "guida filosofica" scritta da Tim Peters, uno dei principali sviluppatori di Python (per chi appunto programma in Python) e con il tempo è diventato una parte fondamentale della cultura di questo linguaggio.
+
+Non è un insieme di regole rigide, ma piuttosto una raccolta di principi e linee guida che mirano a rendere il codice Python più leggibile, elegante e manutenibile 
+(ovvero facile da capire, modificare e aggiornare nel tempo).
+
+
+I principi dello Zen di Python, sono 19:
+
+	1) Bello è meglio di brutto: Un codice ben scritto è più piacevole da leggere e da mantenere.
+	
+	2) Esplicito è meglio di implicito: Il codice deve essere chiaro e univoco.
+	
+	3) Semplice è meglio di complesso: Evitare soluzioni complicate quando ce ne sono di semplici.
+
+	4) Complesso è meglio di complicato: Se un problema richiede una soluzione complessa, questa deve essere ben strutturata e non "complicata" (ovvero difficile da capire).
+
+	5) Lineare è meglio di annidato: è preferibile avere una struttura di codice lineare e semplice piuttosto che annidata (ovvero con molti livelli di indentazione).
+
+	6) Sparso è meglio di denso: Un codice ben spaziato e organizzato è più facile da leggere.
+	
+	7) La leggibilità conta: Un codice ben leggibile è fondamentale per la comprensione e la manutenzione del codice stesso.
+	
+	8) I casi speciali non sono tanto speciali da infrangere le regole: Anche in situazioni particolari, è bene cercare di rispettare i principi generali.
+	
+	9) Anche se la praticità batte la purezza: A volte, non bisogna essere troppo integralisti e dare spazio soprattutto alla praticità, in sostanza è un invito a non essere troppo rigidi ma piuttosto a cercare un equilibrio tra la "purezza" e la praticità del codice.
+
+	10) Gli errori non dovrebbero mai passare inosservati: Gli errori vanno gestiti in modo appropriato, non ignorati.
+	
+	11) A meno che non siano esplicitamente silenziati: In alcuni casi specifici, può essere necessario "sopprimere" un errore, ma ciò deve essere fatto in modo consapevole.
+	
+	12) Di fronte all'ambiguità, rifiuta la tentazione di indovinare: Se c'è incertezza su come interpretare qualcosa, è meglio andare affondo e chiarire piuttosto che "indovinare".
+	
+	13) Ci dovrebbe essere un modo, e preferibilmente uno solo, ovvio per fare le cose: Python cerca di offrire un modo "standard" per risolvere i problemi.
+	
+	14) Anche se questo modo potrebbe non essere ovvio all'inizio, a meno che tu non sia olandese: Questo è un riferimento scherzoso al creatore di Python, Guido van Rossum, che è olandese.
+	
+	15) Ora è meglio di mai: È preferibile fare qualcosa subito piuttosto che rimandare.
+	
+	16) Anche se "mai" è spesso meglio di "adesso": In alcuni casi, è meglio non fare nulla piuttosto che fare qualcosa di sbagliato.
+	
+	17) Se l'implementazione è difficile da spiegare, è una cattiva idea: Un codice difficile da spiegare probabilmente è anche difficile da capire e da mantenere.
+
+	18) Se l'implementazione è facile da spiegare, potrebbe essere una buona idea: Un codice semplice da spiegare è un buon segno.
+
+	19) I namespace sono un'ottima idea, usiamoli! I namespace aiutano a organizzare il codice e a evitare conflitti tra nomi.  
+
+Questi codici inoltre, si possono vedere in qualsiasi momento stampando "import this"
+
+Come mai lo zen di Python è così importante? 
+
+Lo Zen di Python non è solo un insieme di frasi carine. Questi principi, se seguiti, portano a un codice di qualità superiore, più facile da capire, condividere e mantenere nel tempo.
