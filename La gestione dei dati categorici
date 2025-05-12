@@ -1,0 +1,54 @@
+Un dato categorico è un tipo di dato che rappresenta una caratteristica o una qualità che può essere divisa in categorie distinte. 
+
+Ci sono due tipi principali di dati categorici:
+	• Nominali: Queste sono categorie che non hanno un ordine specifico. I colori (rosso, blu, verde) ne sono un esempio. Difatti non c'è un colore "più grande" o "più importante" di un altro. O anche la città in cui si vive (Roma, Milano, Napoli) è un dato nominale.
+	
+	• Ordinali: Queste sono categorie che hanno un ordine o una gerarchia ben precisa. Pensa ai livelli di istruzione (elementari, medie, superiori, università) o al giudizio di un film (pessimo, mediocre, buono, ottimo). In questo caso, c'è un chiaro ordine tra le categorie.
+
+
+La gestione dei dati categorici è un aspetto cruciale della preparazione dei dati per l'analisi e il machine learning. 
+A differenza dei dati numerici, i dati categorici richiedono tecniche specifiche per essere elaborati e utilizzati efficacemente nei modelli.
+
+E ora andiamo a vedere alcune delle principali sfide e tecniche nella gestione dei dati categorici:
+
+Sfide:
+	• Natura non numerica:  Come sappiamo, La maggior parte degli algoritmi di machine learning funziona con input numerici. Pertanto, i dati categorici devono essere trasformati in una forma numerica.
+	
+	• Cardinalità elevata: Alcune variabili categoriche possono avere un numero elevato di categorie uniche (ad esempio, codici postali o indirizzi). Questo può portare a problemi di dimensionalità e rendere difficile l'apprendimento per i modelli.
+	
+	• Relazioni non lineari: Le relazioni tra le diverse categorie possono non essere lineari e difficili da catturare con semplici trasformazioni numeriche.
+	
+	• Informazioni ordinali: Alcune variabili categoriche hanno un ordine intrinseco (ad esempio, "basso", "medio", "alto"). È importante preservare questa informazione durante la trasformazione.
+	
+
+Tecniche di Encoding:
+Queste tecniche vengono utilizzate per convertire le variabili categoriche in una forma numerica in modo che gli algoritmi di machine learning possano comprendere i dati.
+
+	• One-Hot Encoding: Per ogni categoria unica in una variabile, viene creata una nuova colonna binaria (0 o 1). Se l'osservazione appartiene a quella categoria, la colonna corrispondente avrà un valore di 1, altrimenti 0. Questa tecnica è adatta per variabili nominali (senza un ordine intrinseco) con bassa cardinalità. Ad esempio, la variabile "Colore" con categorie "Rosso", "Verde", "Blu" verrebbe trasformata in tre nuove colonne: "Colore_Rosso", "Colore_Verde", "Colore_Blu". Un'osservazione con "Colore = Rosso" avrebbe un valore di 1 in "Colore_Rosso" e 0 nelle altre due e viceversa.
+	
+	• Label Encoding (o Integer Encoding): Ogni categoria unica viene assegnata a un numero intero. Questa tecnica è semplice da implementare ma può introdurre una relazione ordinale inesistente tra le categorie, il che potrebbe confondere alcuni algoritmi. È più adatta per variabili ordinali o come passaggio preliminare per altre tecniche.
+	Ad esempio, "Basso", "Medio", "Alto" potrebbero essere codificati come 0, 1, 2 rispettivamente.
+	
+	• Binary Encoding: Ogni categoria viene prima convertita in un intero e poi rappresentata in codice binario. Ogni cifra binaria crea una nuova colonna. Questa tecnica può ridurre la dimensionalità rispetto all'one-hot encoding, soprattutto per variabili con alta cardinalità.
+	
+	• Ordinal Encoding: Simile al label encoding, ma viene prestata attenzione all'ordine delle categorie. Le categorie vengono mappate a interi in base al loro ordine. Adatto per variabili ordinali.
+	
+	• Frequency/Count Encoding: Le categorie vengono sostituite con la loro frequenza o il conteggio di occorrenze nel dataset. Questo può essere utile per catturare l'importanza o la rarità di una categoria.
+	
+	• Target Encoding: Ogni categoria viene sostituita con la media della variabile target per quella categoria. Questa tecnica può catturare informazioni utili per la previsione, ma può anche portare a overfitting se non gestita correttamente.
+	
+	• Embedding: Tecniche più avanzate, spesso utilizzate nel deep learning, che rappresentano le categorie in spazi vettoriali a bassa dimensionalità. Le rappresentazioni apprese cercano di catturare le relazioni semantiche tra le categorie. Esempi includono l'utilizzo di layer di embedding nelle reti neurali.
+
+	
+Gestione della Cardinalità Elevata:
+Quando una variabile categorica ha molte categorie uniche, l'one-hot encoding può portare a un'esplosione dimensionale. In rimedio, alcune strategie per affrontare questo problema includono:
+	
+• Raggruppamento di categorie: Combinare categorie meno frequenti in una singola categoria "Altro" o in gruppi più ampi basati sulla loro similarità o significato.
+
+• Utilizzo di tecniche di encoding adatte: Binary encoding o target encoding possono essere più efficienti in termini di dimensionalità.
+
+• Feature selection/reduction: Dopo l'encoding, possono essere applicate tecniche di selezione o riduzione delle feature per ridurre la dimensionalità complessiva del dataset.
+
+
+
+Infine possiamo dire che la scelta della tecnica di encoding dipende molto dal tipo di variabile categorica (nominale o ordinale), dalla cardinalità e dall'algoritmo di ML che si intende utilizzare.
