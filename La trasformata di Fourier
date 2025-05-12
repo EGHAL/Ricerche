@@ -1,0 +1,40 @@
+La trasformata di Fourier è uno strumento matematico potentissimo che ci permette di "scomporre" un segnale (come un'onda sonora o un'immagine) in tutte le frequenze che lo compongono, mostrandoci quanto è presente ciascuna frequenza.
+
+A cosa serve? 
+La trasformata di Fourier viene utilizzata in tantissimi campi:
+
+	• Elaborazione dei segnali: 
+		○ Dove viene utilizzata per filtrare i rumori dai segnali audio e video;
+		○ Permette di comprimere i file audio (come gli MP3) e le immagini (come JPEG).
+		
+	• Telecomunicazioni:
+		○ È fondamentale per la trasmissione e la ricezione di segnali radio e televisivi.
+		
+	• Medicina:
+		○ Viene utilizzata nella risonanza magnetica per ottenere immagini del corpo umano;
+		○ È utilizzata nell'elettrocardiogramma per analizzare il battito cardiaco.
+		
+	• Astronomia:
+		○ Viene utilizzata per analizzare i segnali provenienti dalle stelle dalle galassie.
+
+
+Nel campo dell'AI e del ML la trasformata di Fourier è fondamentale per:
+
+	• L'elaborazione di segnali audio e immagini:
+	
+		○ poiché scomponendone i segnali facilita di conseguenza l'analisi e l'estrazione delle caratteristiche rilevanti. 
+		○ Ad esempio, nel riconoscimento vocale, viene utilizzata per convertire i segnali audio in spettrogrammi, che rappresentano la distribuzione delle frequenze nel tempo. Questi spettrogrammi possono essere successivamente utilizzati come input per modelli di apprendimento automatico.
+
+	• Analisi delle serie temporali:
+		○ Nell'AI, è utilizzata in molte applicazioni, come la previsione del marcato azionario, diagnosi mediche e monitoraggio ambientale. 
+		In questo caso la trasformata di Fourier consente di identificare i modelli di frequenza presenti nelle serie temporali, utilizzati per prevedere i valori futuri.
+		
+	• Compressione dei dati:
+		○ Nell'AI la compressione dei dati è importante soprattutto per ridurre i requisiti di archiviazione e di larghezza di banda per i modelli di apprendimento automatico. 
+		○ Ad esempio, la trasformata di Fourier discreta del coseno è utilizzata nell'algoritmo di compressione JPEG per le immagini.
+		
+	• Estrazione delle caratteristiche:
+		○ In molti casi, i dati grezzi non possono essere direttamente utilizzati in modelli di ML e la trasformata di Fourier in questo caso può essere utilizzata per estrarre caratteristiche rilevanti dai dati, che possono essere utilizzate successivamente per addestrare i modelli.
+		○ Ad esempio, nel riconoscimento delle immagini, la trasformata di Fourier può essere utilizzata per estrarre le frequenze spaziali delle immagini (calcolando la velocità del cambiamento dei valori dei pixel) che possono essere utilizzate per identificare forme e texture.
+
+Come abbiamo visto, la trasformata di Fourier è uno strumento versatile che consente di analizzare e manipolare i dati in modi che risulterebbero ancor più difficili o in alcuni casi impossibili con altri metodi. Tutto questo la rende uno strumento prezioso per molte applicazioni di AI e ML.
