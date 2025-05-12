@@ -1,0 +1,31 @@
+Le "fallback" sono meccanismi di sicurezza utilizzati in informatica e nello sviluppo dell'intelligenza artificiale e machine learning per gestire situazioni in cui un sistema non è in grado di fornire la risposta o il risultato desiderato.
+In pratica, è un piano B che entra in azione quando il piano A fallisce.
+
+Gli scopi principali delle fallback sono:
+
+	• Gestione degli errori: Prevengono il blocco o il malfunzionamento di un sistema quando si verificano problemi.
+	
+	• Miglioramento dell'affidabilità: Garantiscono che un sistema possa fornire una risposta, anche se non è la risposta ideale.
+	
+	• Esperienza utente: Offrono un'alternativa accettabile all'utente quando la soluzione principale non è disponibile.
+
+Nell'AI un esempio di fallback potrebbe essere:
+
+	• In un chatbot, se il sistema non capisce la domanda inserita dall'utente, invece di interrompersi, il sistema riesce a fornire una risposta generica o a chiedere direttamente all'utente di riformulare la domanda.
+
+	• Oppure nei sistemi di riconoscimento vocale, se una parola non dovesse essere riconosciuta con certezza, il sistema troverà automaticamente un alternativa.
+
+ Nel Machine Learning invece:
+
+	• Se ad esempio un modello di machine learning non è in grado di fare una previsione, può fornire comunque una previsione basata su un modello più semplice o su dei dati storici.
+	
+	• Oppure  nei sistemi di rete, in caso di malfunzionamento della linea principale si attiva automaticamente una linea di riserva. 
+
+In Python, le fallback si possono implementare con diverse tecniche:
+
+	• Blocchi try-except: permettono di gestire le eccezioni che si verificano durante l'esecuzione del codice
+	• Istruzioni if-else: Permettono di eseguire codice diverso a seconda delle condizioni
+	• Funzioni con valori di default: Permettono di specificare un valore di default per un parametro di una funzione, che viene utilizzato se il parametro non viene specificato.
+
+Infine possiamo dire che le fallback sono una parte molto importante della progettazione di sistemi robusti e affidabili. Permettono di gestire gli errori e di garantire che un sistema possa fornire comunque una risposta, anche in situazioni difficili. 
+  
