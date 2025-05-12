@@ -1,0 +1,23 @@
+Le docstring (document strings) sono stringhe letterali che appaiono come prima istruzione in una definizione di modulo, funzione, classe o metodo.
+
+Il loro scopo è fornire una descrizione concisa e chiara di ciò che il codice fa.
+
+In sostanza, sono come dei "commenti speciali" che Python può utilizzare per generare automaticamente le documentazione del codice. 
+
+Le caratteristiche principale delle docstring :
+
+	• Stringhe multiriga: Le docstring possono estendersi su più righe, utilizzando (""").
+	
+	• Accessibilità: Python ci permette di accedere alle docstring tramite l'attributo __doc__ di un oggetto.
+	
+	• Formattazione: Esistono delle convenzioni per la formattazione delle docstring, come il PEP 257, (Python Enhancement Proposal 257) ovvero un documento di design fornito da Python, che nel caso del 257, delinea le convenzioni e gli standard per le docstring in Python.
+
+A cosa servono le docstring?
+
+	• Documentazione del codice: Rendono il codice più facile da capire sia a noi stessi che agli sviluppatori.
+	• Generazione automatica di documentazione: Strumenti come Sphinx (uno strumento di documentazione open source molto popolare)possono utilizzare le docstring per creare documentazione HTML o PDF.
+	• Aiuto interattivo: In ambienti interattivi come Ipython, le docstring possono essere visualizzate per fornire informazioni rapide su funzioni e classi.
+	
+	
+Infine possiamo dire che Le docstring sono uno strumento essenziale per scrivere un codice Python chiaro, documentato e manutenibile, infatti è consigliabile prendere l'abitudine nello scrivere docstring per tutte le funzioni, classi e moduli.
+  
