@@ -1,0 +1,48 @@
+L'algebra lineare è una branca della matematica che si occupa dello studio di:
+
+	• Vettori: un vettore è una freccia che ha una lunghezza e una direzione. I vettori possono essere aggiunti e moltiplicati per scalari (numeri utilizzati per modificare la grandezza dei vettori).
+	
+	• Spazi vettoriali: insiemi di vettori che possono essere sommati e moltiplicati per scalari;
+	
+	• Trasformazioni lineari:  funzioni che mappano uno spazio vettoriale in un altro;
+	
+	• Sistemi di equazioni lineari: insiemi di equazioni in cui le variabili sono tutte elevate alla potenza di uno.
+	
+	• Matrici:  Una matrice è una tabella rettangolare di numeri, simboli o espressioni, disposti in righe e colonne e sono spesso utilizzate per trasformazioni lineari, risolvere sistemi di equazioni lineari e per manipolare i dati.
+	Esse possono essere: sommate, sottratte, moltiplicate e divise, ma con alcune "restrizioni":
+	
+		○ Somma e sottrazione: Le matrici devono avere le stesse dimensioni.
+		○ Moltiplicazione: Il calcolo viene definito solo se il numero di colonne (A) è uguale al numero di righe di (B) 
+		○ Divisione: Per le matrici, non esiste un'operazione di divisione diretta, ma esiste il concetto di matrice inversa.
+
+
+L'algebra lineare viene utilizzato in molte aree della scienza e dell'ingegneria, tra cui:
+
+	• L'AI e il ML;
+	• La computer grafica;
+	• La fisica;
+	• L'economia.
+
+
+
+Utilizzo dell'algebra lineare nello sviluppo di AI e ML:
+
+	• Rappresentazione dei dati: i dati (come le immagini, testo, tabelle ecc.) sono spesso rappresentati come matrici o tensori per renderli elaborabili;
+	
+	• Algoritmi di apprendimento automatico: Molti algoritmi di ML come le reti neurali si basano su operazioni di algebra lineare;
+	
+	• Elaborazione delle immagini: Le immagini digitali sono rappresentate come matrici di pixel e l'algebra lineare in questo caso viene utilizzata per trasformare, ruotare e ridimensionare le immagini. 
+	
+	• Elaborazione del linguaggio naturale (NLP): L'algebra lineare in questo caso viene utilizzata per rappresentare parole e frasi come vettori, consentendo ai computer di comprendere e manipolare il linguaggio.
+	
+	• Reti neurali profonde (Deep Learning): Le reti neurali profonde sono costituite da strati di neuroni interconnessi. L'algebra lineare viene utilizzata per calcolare le uscite dei neuroni e per aggiornare i pesi delle connessioni durante l'addestramento.
+
+
+
+In sostanza, l'algebra lineare fornisce gli strumenti matematici per: 
+
+	• Comprendere e manipolare dati complessi;
+	
+	• Costruire e addestrare modelli di apprendimento automatico
+	
+	• Sviluppare applicazioni di intelligenza artificiale. 
