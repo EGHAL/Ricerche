@@ -1,0 +1,33 @@
+Una pipeline è un flusso di lavoro automatizzato e sequenziale di diverse fasi di elaborazione dei dati e di costruzione del modello. Ogni fase della pipeline prende in input l'output della fase precedente, trasformando i dati fino a raggiungere l'obiettivo finale, che può essere l'addestramento di un modello predittivo, la valutazione delle sue prestazioni o il suo deployment per l'utilizzo.
+
+
+Immaginiamo di voler costruire un modello di ML per prevedere se un'email sia spam o meno. Ecco come potrebbe apparirebbe una semplice pipeline:
+
+	1) Ingestione dei dati: Raccogliamo un set di email etichettate come "spam" o "non spam".
+	
+	2) Pre-elaborazione del testo: Questa fase potrebbe includere la rimozione della punteggiatura, la conversione di tutte le parole in minuscolo e la rimozione delle "stop words" (parole comuni come "il", "e", "un" che di solito non aggiungono molto significato). Bisogna perciò pensare a "pulire" il testo delle email per concentrarsi sulle parole importanti.
+	
+	3) Estrazione delle feature: Trasformiamo il testo pre-elaborato in numeri che il modello può capire. Una tecnica semplice potrebbe essere il "bag-of-words", dove si conta la frequenza di ogni parola in ogni email. Ad esempio, se la parola "gratis" compare molte volte, potrebbe essere un indizio di spam.
+	
+	4) Addestramento del modello: Scegliamo un algoritmo di classificazione, come la regressione logistica, e lo addestriamo usando le email con le loro etichette ("spam" o "non spam") e le feature estratte. Il modello impara così a distinguere le caratteristiche tipiche delle email di spam.
+	
+	5) Valutazione del modello: Prendiamo un nuovo set di email che il modello non ha mai visto e verifichiamo quanto bene riesce a classificarle come spam o non spam. Misuriamo l'accuratezza delle sue previsioni.
+
+
+
+Perché sono importanti le pipeline?
+
+	• Organizzazione: Rendono il progetto di AI/ML molto più strutturato e facile da capire. Invece di avere tanti pezzi di codice sparsi, hai un flusso logico ben definito.
+	
+	• Riproducibilità: Una volta definita la pipeline, puoi eseguirla più e più volte ottenendo gli stessi risultati (a parità di dati iniziali). Questo è cruciale per la sperimentazione e per portare il modello in produzione.
+	
+	• Efficienza: Le pipeline spesso permettono di automatizzare molti passaggi, risparmiando tempo e riducendo il rischio di errori umani.
+	
+	• Facilità di manutenzione: Se devi modificare un passaggio (ad esempio, cambiare l'algoritmo di machine learning), sai esattamente dove intervenire all'interno della pipeline.
+
+
+Perciò possiamo pensare alle pipeline come una catena di montaggio in una fabbrica: ogni stazione esegue un compito specifico in sequenza per arrivare al prodotto finale e ogni passaggio si rifà a quello precedente. Ecco, una pipeline in AI/ML funziona in modo simile con i dati e i modelli.
+
+Una delle librerie più popolari per costruire pipeline in Python è proprio scikit-learn, che ci permette di definire una sequenza di trasformazioni e un estimatore finale (come un modello di classificazione o regressione). Ogni passo della pipeline applica una trasformazione ai dati in ingresso e passa il risultato al passo successivo.
+
+Infine possiamo dire che le pipeline sono fondamentali per automatizzare l'intero processo di addestramento e nella valutazione dei modelli, inclusa la pre-elaborazione dei dati. 
