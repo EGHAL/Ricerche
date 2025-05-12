@@ -1,0 +1,64 @@
+
+
+Postman è una società di software globale di origine indiana nata nel 2012 che offre una 
+piattaforma API (Application Programming Interfaces)  per gli sviluppatori 
+per progettare, costruire , testare e collaborare sulle API.
+ 
+
+Un API è un insieme di regole e protocolli che permettono a diverse applicazioni software di comunicare 
+e interagire tra loro e funge da "intermediario" facilitando lo scambio di informazioni tra due sistemi.
+
+Per esempio: 
+
+	• Quando utilizzi un app meteo sul tuo smartphone, l'app invia una richiesta a un'API di un servizio meteo per ottenere le informazioni sul meteo.
+	
+	• Quando utilizzi un app di e-commerce, l'app utilizza le API dei sistemi di pagamento per elaborare le transazioni.
+
+In più le API offrono numerosi vantaggi:
+
+	• Permettono a diverse applicazioni di funzionare, anche se sviluppate con tecnologie e/o linguaggi diversi;
+	
+	• Consente agli sviluppatori di riutilizzare le funzionalità;
+	
+	• Favoriscono lo sviluppo di nuove applicazioni e servizi (Siccome possono combinare funzionalità di diverse fonti);
+	
+	• Semplificano la creazione di software, rendendo il lavoro più veloce ed efficiente.  
+ 
+
+In altre parole, Postman è una piattaforma per lo sviluppo e il test delle API e aiuta i programmatori a:
+
+	• Inviare richieste: Si possono inviare richieste a diverse API per vedere come rispondono;
+	
+	• Testare le API: Si possono testare le API per verificare il loro funzionamento e se restituiscono i dati corretti;
+	
+	• Sviluppare le API: Si possono creare e/o modificare le API;
+	
+	• Documentare le API: Si possono creare delle documentazioni per le API create, in modo che gli altri sviluppatori possano  utilizzarle facilmente.
+
+
+Perché è utile per l'AI e il ML?
+
+Nel campo dell' Artificial Intelligence e del Machine Learning le API sono spesso utilizzate per:
+
+	• Accedere a modelli di Machine Learning pre-addestrati;
+	
+	• Integrare funzionalità di AI in altre applicazioni;
+	
+	• Raccogliere e analizzare dati da diverse fonti. 
+
+
+In tutto questo perciò, "Postman" può aiutarci a interagire con le API in modo semplice e intuitivo, facilitando di gran lunga lo sviluppo.
+
+
+In più, Postman ha altri punti forti che lo rendono il programma ideale per le sue funzionalità, ovvero:
+
+	• Interfaccia user-friendly: Postman ha un interfaccia grafica intuitiva che facilita l'invio delle richieste e l'analisi delle risposte;
+	
+	• Collezioni: Si possono organizzare le richieste in delle collezioni per tenerle ben ordinate;
+	
+	• Variabili d'ambiente: Si possono utilizzare delle variabili d'ambiente per gestire facilmente diverse configurazioni;
+	
+	• Test automatizzati: si possono creare dei test automatizzati per verificare il corretto funzionamento delle tue API.
+
+
+Per concludere perciò possiamo dire tranquillamente che POSTMAN, oltre ad una manna dal cielo, sia uno strumento essenziale per chiunque desideri lavorare con le API, specialmente nel campo dell'AI e dell'ML. Ci permette di testare, sviluppare, documentare e organizzare le API in modo efficiente, facendoci risparmiare tempo e fatica.
