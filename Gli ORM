@@ -1,0 +1,38 @@
+Un ORM (Object Relational Mapping) è una tecnica che permette di far comunicare il nostro codice con un database relazionale (ovvero un tipo di database che organizza i dati in tabelle correlate tra loro) in modo più semplice e intuitivo.
+
+
+Ad esempio se avessimo un database che contiene delle informazioni su dei libri, ogni libro avrebbe un titolo, un autore, numero di pagine ecc. bene, In un database relazionale queste informazioni sarebbero organizzate in delle tabelle con righe e colonne (come un in un file excel).
+
+
+Grazie agli ORM possiamo trattare queste tabelle come se fossero oggetti, perciò potremmo avere una classe Libro con attributi come (self, titolo, autore, pagine). L'ORM si occuperà di tradurre le operazioni che facciamo sugli oggetti in istruzioni SQL (il linguaggio dei database) e viceversa.
+
+
+COME FUNZIONA UN ORM?
+
+	• Definizione dei modelli: 
+	Una volta definita la classe, ogni attributo corrisponderà ad una colonna nella tabella.
+	
+	• Mappatura: 
+	L'ORM si occupa proprio di mappare le classi alle tabelle del database e gli attributi delle classi nelle colonne corrispondenti.
+	
+	• Interazione con il database: 
+	Invece di scrivere istruzioni SQL possiamo utilizzare direttamente i metodi degli oggetti per interagire con il database (ad esempio, possiamo creare un'istanza della classe "Libro" salvandola direttamente nel database).
+	
+	• Recupero dei dati: 
+	Possiamo anche recuperare i dati dal database creando degli oggetti a partire dalle righe delle tabelle.
+	 
+
+ QUALI SONO I VANTAGGI?
+
+	• Semplificazione del codice: Utilizzando un ORM non dobbiamo scrivere necessariamente del codice SQL, 
+	• il che oltre alla comodità ne giova anche la leggibilità e la manutenibilità del codice.
+	
+	• Portabilità: Possiamo cambiare il database senza dover necessariamente modificare il codice, perciò una maggiore versatilità nel riutilizzo del codice stesso.
+	
+	• Sicurezza: Gli ORM aiutano a prevenire gli attacchi SQL injection (ovvero una tecnica di attacco informatico che interagisce appunto con un database SQL, con l'obiettivo di manipolare le query SQL eseguite dal database). 
+	Una delle più comuni è il Login bypass, ad esempio un attaccante potrebbe inserire nel codice di autenticazione 
+	(' ' OR '1' = '1') facendo risultare la query sempre vera, lasciando perciò il libero accesso a tutti i contenuti del database.
+	
+	• Produttività: L'ORM ci permette di concentrarci sulla logica del codice invece di occuparci sui dettagli del database.
+
+
