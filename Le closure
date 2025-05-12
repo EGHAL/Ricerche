@@ -1,0 +1,43 @@
+Una closure è una funzione interna che ha accesso alle variabili del suo ambito esterno, e le "ricorda" anche dopo che la funzione esterna ha terminato la sua esecuzione.
+
+in sostanza, una closure è una funzione interna definita all'interno di un'altra funzione (perciò annidata).
+
+Perché dovremmo usare le closure?
+
+Come abbiamo detto, La specialità delle closure è che avendo accesso alle variabili delle funzioni esterne, "ricordano" i valori esterni, anche quando la funzione esterna non è più in esecuzione.
+
+Questo aspetto è molto utile, perché ci permette di incapsulare dei dati, ovvero di creare delle funzioni che mantengono uno stato interno (utile per nascondere e/o proteggere i dati).
+
+Inoltre, le closure possono essere utilizzate per creare delle funzioni che generano altre funzioni, ovviamente con dei parametri personalizzati, chiamate per l'appunto "factory functions". 
+
+In più le closure sono alla base dei decoratori, che come abbiamo visto, ci permettono di modificare il comportamento delle funzioni che forniscono proprio il meccanismo per "ricordare" la funzione originale all'interno del decoratore, consentendo di modificare il suo comportamento, difatti, senza le closure, i decoratori non sarebbero in grado di funzionare come fanno.
+
+Vediamo un esempio:
+
+
+def funzione_esterna(x):
+    def funzione_interna(y):      #Closure con valore y, che ricorda x 
+        return x + y              
+    return funzione_interna       #La closure ha accesso anche alla variabile x
+
+somma_5 = funzione_esterna(5)     #Chiamata della funzione esterna che assegna il valore 5 a x
+risultato = somma_5(3)            #Chiamata della closure che assegna il valore 3 a y
+print(risultato)                  #Stampa il risultato (8)
+
+
+Infine, c'è da dire che le closure sono strettamente legate al concetto di "first-class functions", 
+ovvero delle funzioni che possono essere trattate come qualsiasi altro oggetto.
+
+ Con questo esempio possiamo notare come le first-class functions (o semplicemente funzioni) possano essere:
+
+	• Assegnate a delle variabili: Come abbiamo visto nell'esempio con somma_5 = funzione_esterna(5)
+	
+	• Passate come argomenti ad altre funzioni: Possiamo passare una funzione come input a un'altra funzione.
+       
+	• Restituite da altre funzioni: Una funzione può restituire un'altra funzione come output. 
+	
+	• Memorizzate in strutture dati: Puoi memorizzare le funzioni in liste, dizionari, ecc.
+
+
+Come abbiamo visto, le closure non sono solo "un modo di programmare", ma un potente strumento per scrivere 
+un codice più elegante, flessibile e soprattutto sicuro.
